@@ -1,3 +1,4 @@
+// my database - array of objects
 var friends = [
 
     {

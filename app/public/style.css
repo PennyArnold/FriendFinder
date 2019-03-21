@@ -1,13 +1,17 @@
-.big-banner{
-    background-image: url("../public/friendbg.jpg");
+.big-banner {
+
+    background-image: url("./friendbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-};
 
-img{
-   width: 100%;
-   height: 2in;
-};
+}
 
+;
+
+img {
+    width: 100%;
+    height: 2in;
+}
+
+;

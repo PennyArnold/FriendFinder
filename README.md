@@ -35,14 +35,16 @@ Then, I added the body-parser structure (which returns json and string text and 
 
 Then, I made my json array in the friends.js which acts as my database for this project.  Each object contains a name, image and an array of numbers (scores) that are summed and compared to the sum of the score that the user puts into the form.  The last line of code exports the friends file.
 
-##Public Folder
-The next step is to build the html home and survey pages. This creates the look for my application. I used a background picture to give the survey a unique look. Also included in the survey html is the javacript that performs the action for the modal that displays the match based on the users input.
+## Public Folder
+The next step is to build the html home and survey pages. This creates the look for my application. I used a background picture to give the survey a unique look. Also included in the survey html is the javacript that performs the commands for the modal to display the match based on the users input.
 
 Also included are the photos used for the friends match which are part of the json database (friends.js).
 
-##Routing Pages
+## Routing Pages
 HTML -The routing paths apply to the buttons in the htlm documents.
 API - Connects the json file (array of objects) - includes a get request and post request.  Also, this contains the code to parse the user's score to best match the json to the user's input.
+
+Please review the code to see how each step works.  To connect, in node call the file (node - server.js) to connect to the server,then go to your browser and type localhost:3000 and follow the steps.  
 
 
 

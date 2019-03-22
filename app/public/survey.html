@@ -18,8 +18,10 @@
     <title>Friend Finder Survey</title>
 </head>
 
-<body>
+<body> 
+    <!-- holds everything and centers it on our page -->
     <div class="container">
+        <!-- jumbotron -->
         <div class="jumbotron big-banner" style="height: 100%">
             <div class="row">
                 <h1>Survey Questions</h1>
@@ -27,7 +29,9 @@
             <div class="row">
                 <h2>About You</h2>
             </div>
+            <!-- this is the form that collects the user input -->
             <form>
+                <!-- the name and image are required -->
                 <div class="form-group">
                     <label for="formGroupExampleInput">Name (Required)</label>
                     <input type="text" class="form-control" id="name" placeholder="name">
@@ -37,7 +41,7 @@
                     <input type="text" class="form-control" id="photo" placeholder="image">
                 </div>
             </form>
-
+            <!-- this begins the questions that will be used to determine the friend match -->
             <div class="row">
                 <h4>Question 1</h4>
             </div>
@@ -199,12 +203,12 @@
             </div>
             <br>
             <br>
+            <!-- submit button -->
             <div class="row">
                 <button class="btn btn-dark" id="submit" style="width: 100%" type="submit">Submit form</button>
             </div>
-
-            
         </div>
+        <!-- this is the modal that displays the match once the user submits their input -->
         <div id="resultsModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -230,13 +234,7 @@
             </div>
     </div>
     <!-- </div> -->
-
-
-
-
-
-
-  
+    <!-- jQuery script - need popper and bootstrap -->
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -246,7 +244,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 
-
+    <!-- javascript that listens for the click to select the match -->
     <script type="text/javascript">
         $("#submit").on("click", function () {
             function validateForm() {
@@ -277,7 +275,7 @@
                     ]
                 };
                 var currentURL = window.location.origin;
-
+                // post request
                 $.post(currentURL + "/api/friends", userData, function (data) {
                     $(".matchName").text(data.name);
                     $("#matchImg").attr("src", data.photo);

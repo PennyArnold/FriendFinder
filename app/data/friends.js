@@ -3,44 +3,44 @@ var friends = [
 
     {
         name: "Jerry Seinfield",
-        photo: "app\public\jerry.jpg",
-        scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 4]
+        photo: "jerry.jpg",
+        scores: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
     },
 
     {
         name: "Michael Scott",
-        photo: "app\public\steve.jpg",
-        scores: [5, 1, 1, 4, 5, 1, 2, 3, 2, 4]
+        photo: "steve.jpg",
+        scores: [1, 2, 3, 4, 5, 1, 2, 3, 2, 4]
     },
 
     {
         name: "Napoleon Dynamite",
-        photo: "app\public\napoleon.jpg",
-        scores: [1, 1, 4, 1, 5, 1, 2, 1, 4, 1]
+        photo: "napoleon.jpg",
+        scores: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     },
 
     {
         name: "Rosanne Rosannadanna",
-        photo: "app\public\Rossanne.png",
-        scores: [5, 1, 1, 4, 1, 1, 2, 1, 1, 4]
+        photo: "Rossanne.png",
+        scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     },
 
     {
         name: "Mary Catherine Gallagher",
-        photo: "app\public\jerry.jpg",
-        scores: [5, 5, 5, 4, 5, 1, 5, 5, 4, 4]
+        photo: "mary.jpg",
+        scores: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
     },
 
     {
         name: "Tammy",
-        photo: "app\public\melissa.jpg",
-        scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 4]
+        photo: "melissa.jpg",
+        scores: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
     },
 
     {
         name: "Medea",
-        photo: "app\public\medea.jpg",
-        scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 4]
+        photo: "medea.jpg",
+        scores: [5, 4, 3, 2, 1, 1, 2, 3, 4, 5]
     }
 ];
 

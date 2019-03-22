@@ -33,9 +33,14 @@ Then, in the server.js file, I copied and pasted my packages, and my port and te
 
 Then, I added the body-parser structure (which returns json and string text and sets the type) and applied api and html routes for paths to files.
 
-Then, I make my json array in the friends.js which acts as my database for this project.  Each object contains a name, image and array of numbers (scores) that will be summed and compared to the sum of the score that the user puts into the form.  The last line of code exports the file.
+Then, I made my json array in the friends.js which acts as my database for this project.  Each object contains a name, image and an array of numbers (scores) that are summed and compared to the sum of the score that the user puts into the form.  The last line of code exports the friends file.
 
-The next step is to build the html home and survey pages.  This is self explanitory in the code.
+The next step is to build the html home and survey pages. This creates the look for my application. I used a background picture to give the survey a unique look. Also included in the survey html is the javacript that performs the action for the modal that displays the match based on the users input.
+
+##Public Folder
+
+
+
 
 
   

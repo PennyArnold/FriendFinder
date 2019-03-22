@@ -30,11 +30,11 @@
             <form>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Name (Required)</label>
-                    <input type="text" class="form-control" id="formGroupNameInput" placeholder="name">
+                    <input type="text" class="form-control" id="name" placeholder="name">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Link to Photo Image (Required)l</label>
-                    <input type="text" class="form-control" id="formGroupImageInput" placeholder="image">
+                    <input type="text" class="form-control" id="photo" placeholder="image">
                 </div>
             </form>
 
@@ -200,7 +200,7 @@
             <br>
             <br>
             <div class="row">
-                <button class="btn btn-dark" style="width: 100%" type="submit">Submit form</button>
+                <button class="btn btn-dark" id="submit" style="width: 100%" type="submit">Submit form</button>
             </div>
         </div>
     </div>
@@ -252,10 +252,10 @@
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
-                    if ($(this).value() === "") isValid = false;
+                    if ($(this).val() === "") isValid = false;
                 });
                 $(".chosen-select").each(function () {
-                    if ($(this).value() === "") isValid = false;
+                    if ($(this).val() === "") isValid = false;
                 })
                 return isValid;
             }
@@ -264,24 +264,24 @@
                     name: $("#name").val(),
                     photo: $("#photo").val(),
                     scores: [
-                        $("q1").val(),
-                        $("q2").val(),
-                        $("q3").val(),
-                        $("q4").val(),
-                        $("q5").val(),
-                        $("q6").val(),
-                        $("q7").val(),
-                        $("q8").val(),
-                        $("q9").val(),
-                        $("q10").val()
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
                     ]
                 };
                 var currentURL = window.location.origin;
 
                 $.post(currentURL + "/api/friends", userData, function (data) {
-                    $("matchName").text(data.name);
+                    $("#matchName").text(data.name);
                     $("#matchImg").attr("src", data.photo);
-                    $("resultsModal").modal("toggle");
+                    $("#resultsModal").modal("toggle");
                 });
             } else {
                 alert("Please fill out all fields before submitting!")

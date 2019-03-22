@@ -25,7 +25,9 @@ FriendFinder
   - package.json
   - server.js
 
-The first step entailed installing the npm install body-parser and express through Node.js.
+
+
+The first step entailed installing the npm install body-parser and express through Node.js.In the terminal, npm init -y and npm install express.
 
 Then, in the server.js file, I copied and pasted my packages, and my port and tested my port connection by typing node server in the terminal.  The terminal responds:  "Listening on port 3000"
 

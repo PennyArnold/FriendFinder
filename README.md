@@ -1,5 +1,7 @@
 # FriendFinder
 
+Deployed site: http://pure-plains-47297.herokuapp.com/
+
 Javascript application using Node.js and Express to handle routing while using get and post methods.
 
 Packages included are body-parser, express and path.
